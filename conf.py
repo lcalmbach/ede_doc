@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'EDE'
+project = 'Environmental Data Explorer'
 copyright = '2020, Lukas Calmbach'
 author = 'Lukas Calmbach'
 

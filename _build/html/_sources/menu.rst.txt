@@ -35,20 +35,23 @@ In this mode, a selectbox with stations and a selectbox with parameters appear b
 * table listing concentration summary per station for 
 * table listing summary of samples collected at the station summarized by year
 
+********
 Plotting
-========
-The `Plotting` menu allows you to visualize the data using various charts. 
+********
+The `Plotting` menu allows you to visualize the data using various charts. The following plot types are available:
 
-Histogram
-*********
+* Bar chart
+* Time series
+* Scatter plot
+* Box plot
+* Histogram
 
+These use of these plots is discussed in detail in `Plots` chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:
 
-Tables
-======
-Data is displayed as plots or in tables. For larger tables use the scrollbars to view the full table content. you may also use the handle in the upper right to open a new window showing a larger version of the table.
+Plot group by
+-------------
+The group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.
 
-.. image:: _static/1_4.png
-   :scale: 70 %
-   :align: center
-
-Below each table, you will find a link, that will download a csv file of the data. You may either just click on the link and download the file under a default name to your download folder. Rightclick the link and select the <save as> command in the context menu, to directly place the file under a specified name in your target folder.
+Marker group by
+---------------
+the group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.

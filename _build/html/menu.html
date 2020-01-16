@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Menu &mdash; EDE 0.0.2 documentation</title>
+  <title>Menu &mdash; Environmental Data Explorer 0.0.2 documentation</title>
   
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> EDE
+            <a href="index.html" class="icon icon-home"> Environmental Data Explorer
           
 
           
@@ -87,12 +87,10 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Menu</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#info">Info</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#station-information">Station information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#parameters-information">Parameters information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#plotting">Plotting</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#histogram">Histogram</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parameters-information">Parameters information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plotting">Plotting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plot-group-by">Plot group by</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#marker-group-by">Marker group by</a></li>
 </ul>
 </li>
 </ul>
@@ -112,7 +110,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">EDE</a>
+          <a href="index.html">Environmental Data Explorer</a>
         
       </nav>
 
@@ -189,18 +187,25 @@
 * summary table listing all stations, where parameter was measured including number of measurments, average value, first year of observation, last year of observation
 * table listing concentration summary per station for
 * table listing summary of samples collected at the station summarized by year</p>
+</div>
 <div class="section" id="plotting">
-<h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h3>
-<p>The <cite>Plotting</cite> menu allows you to visualize the data using various charts.</p>
-<div class="section" id="histogram">
-<h4>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h4>
+<h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h2>
+<p>The <cite>Plotting</cite> menu allows you to visualize the data using various charts. The following plot types are available:</p>
+<ul class="simple">
+<li><p>Bar chart</p></li>
+<li><p>Time series</p></li>
+<li><p>Scatter plot</p></li>
+<li><p>Box plot</p></li>
+<li><p>Histogram</p></li>
+</ul>
+<p>These use of these plots is discussed in detail in <cite>Plots</cite> chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:</p>
+<div class="section" id="plot-group-by">
+<h3>Plot group by<a class="headerlink" href="#plot-group-by" title="Permalink to this headline">¶</a></h3>
+<p>The group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <cite>plot group by</cite> is set to <cite>none</cite>, only a single plot will be created.</p>
 </div>
-</div>
-<div class="section" id="tables">
-<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
-<p>Data is displayed as plots or in tables. For larger tables use the scrollbars to view the full table content. you may also use the handle in the upper right to open a new window showing a larger version of the table.</p>
-<a class="reference internal image-reference" href="_images/1_4.png"><img alt="_images/1_4.png" class="align-center" src="_images/1_4.png" style="width: 591.5px; height: 259.7px;" /></a>
-<p>Below each table, you will find a link, that will download a csv file of the data. You may either just click on the link and download the file under a default name to your download folder. Rightclick the link and select the &lt;save as&gt; command in the context menu, to directly place the file under a specified name in your target folder.</p>
+<div class="section" id="marker-group-by">
+<h3>Marker group by<a class="headerlink" href="#marker-group-by" title="Permalink to this headline">¶</a></h3>
+<p>the group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <cite>plot group by</cite> is set to <cite>none</cite>, only a single plot will be created.</p>
 </div>
 </div>
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Main Concepts &mdash; EDE 0.0.2 documentation</title>
+  <title>Main Concepts &mdash; Environmental Data Explorer 0.0.2 documentation</title>
   
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> EDE
+            <a href="index.html" class="icon icon-home"> Environmental Data Explorer
           
 
           
@@ -87,6 +87,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#data-collection">Data collection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-sets">Data sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#user-interface">User interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plots">Plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tables">Tables</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a></li>
@@ -105,7 +107,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">EDE</a>
+          <a href="index.html">Environmental Data Explorer</a>
         
       </nav>
 
@@ -159,17 +161,17 @@
 <h1>Main Concepts<a class="headerlink" href="#main-concepts" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="data-collection">
 <h2>Data collection<a class="headerlink" href="#data-collection" title="Permalink to this headline">¶</a></h2>
-<p>a data collection is a collection of datasets related to each other. The PGMN datacollection consists for example of the datasets chemistry, water levels and precipitation. A data collection requires a introductory text and a least one dataset.
-Data collections can be selected from the ‘select a data collection’ listbox above the menu.</p>
+<p>A data collection consists of datasets related to each other. For example, The PGMN data collection comprises the datasets chemistry, which is the main dataset, water levels, and precipitation data. A data collection requires a introductory text and a least one dataset.
+Data collections can be selected from the <cite>select a data collection</cite> listbox above the menu.</p>
 <a class="reference internal image-reference" href="_images/1_1.png"><img alt="_images/1_1.png" class="align-center" src="_images/1_1.png" style="width: 227.49999999999997px; height: 240.79999999999998px;" /></a>
 </div>
 <div class="section" id="data-sets">
 <h2>Data sets<a class="headerlink" href="#data-sets" title="Permalink to this headline">¶</a></h2>
-<p>Each datasets consist of three tables:
+<p>Each datasets consist of three entities:
 * a station table
 * a parameter table
 * a data table</p>
-<p>In order to explore a dataset, it needs to be selected. If a data collection includes only one dataset, for example the Privincial stream water quality monitoring network, this dataset is selected by default. If there are more than one dataset, a listbox is displayed below the data collection listbox where you may select the dataset you wish to explore.</p>
+<p>To explore a dataset, it needs to be selected in the section above the menu. If a data collection includes only a single dataset, for example the <cite>Privincial stream water quality monitoring network</cite> data collection, this dataset is selected by default and no dataset selectbox is shown to the user. If there are more than one dataset, a listbox is displayed below the data collection listbox where you may select the dataset you wish to explore.</p>
 <a class="reference internal image-reference" href="_images/1_2.png"><img alt="_images/1_2.png" class="align-center" src="_images/1_2.png" style="width: 193.79999999999998px; height: 117.6px;" /></a>
 </div>
 <div class="section" id="user-interface">
@@ -177,6 +179,17 @@ Data collections can be selected from the ‘select a data collection’ listbox
 <p>The user interface is very simple. It is devide in a sideboard holding all controls and menu items and the view panel to the right.</p>
 <a class="reference internal image-reference" href="_images/1_3.png"><img alt="_images/1_3.png" class="align-center" src="_images/1_3.png" style="width: 998.9px; height: 554.4px;" /></a>
 <p>The sideboard is further subdivided from top to down into the data selection controls, the menu, and the controls for generating plots. The latter only appears if the menu item ‘plots’ is selected.</p>
+<p>The view panel is used to display plots and tables requested by the user via the sideboard controls.</p>
+</div>
+<div class="section" id="plots">
+<h2>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">¶</a></h2>
+<p>Plots are created using the <cite>Plotting</cite> menu item. The hamburger menu to the upper right of each plot allows to save or edit the plots. In the plot mode, the sideboard contains a show data option, allowing to show the data used for creating the plot. This data can be downloaded and the user may recreated the plot using his preferred charting software.</p>
+</div>
+<div class="section" id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Data is displayed as plots or in tables. For larger tables use the scrollbars to view the full table content. You may also use the handle in the upper right to open a new window, resulting in displaying a larger version of the table.</p>
+<a class="reference internal image-reference" href="_images/1_4.png"><img alt="_images/1_4.png" class="align-center" src="_images/1_4.png" style="width: 591.5px; height: 259.7px;" /></a>
+<p>Below each table, you will find a link, that allows downloading a csv file of the data. You may either just click on the link and download the file under a default name to your download folder. Rightclick the link and select the &lt;save as&gt; command in the context menu, to directly place the file under a specified name in your target folder.</p>
 </div>
 </div>
 
