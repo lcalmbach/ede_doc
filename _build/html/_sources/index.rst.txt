@@ -12,6 +12,7 @@ EDE's documentation
 
     home
     main_concepts
+    menu
     getting_started
 
 
