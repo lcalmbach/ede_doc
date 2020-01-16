@@ -91,6 +91,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#plotting">Plotting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#plot-group-by">Plot group by</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#marker-group-by">Marker group by</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filter">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
 </ul>
 </li>
 </ul>
@@ -162,6 +164,8 @@
             
   <div class="section" id="menu">
 <h1>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h1>
+<p>This chapter describes the use of each menu item, located on the sideboard:</p>
+<a class="reference internal image-reference" href="_static/menu_menung"><img alt="_static/menu_menung" class="align-center" src="_static/menu_menung" /></a>
 <div class="section" id="info">
 <h2>Info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
 <p>The information rendered in the view panel holds the following sections:
@@ -182,11 +186,13 @@
 </div>
 <div class="section" id="parameters-information">
 <h2>Parameters information<a class="headerlink" href="#parameters-information" title="Permalink to this headline">¶</a></h2>
-<p>In this mode, a selectbox with stations and a selectbox with parameters appear below the menu to you may control for which parameters information should be displayed in the view panel. If on or several stations are selected, the parameter list is filled with parameters that have been analysed for this station. If a parameter is selected, a detail table is displayed with information regarding the parameter. If a parameter is selected the following information is available in the view pane:
-* detail table holding information on the parameter
-* summary table listing all stations, where parameter was measured including number of measurments, average value, first year of observation, last year of observation
-* table listing concentration summary per station for
-* table listing summary of samples collected at the station summarized by year</p>
+<p>In this mode, a selectbox with stations and a selectbox with parameters appear below the menu to you may control for which parameters information should be displayed in the view panel. If on or several stations are selected, the parameter list is filled with parameters that have been analysed for this station. If a parameter is selected, a detail table is displayed with information regarding the parameter. If a parameter is selected the following information is available in the view pane:</p>
+<ul class="simple">
+<li><p>detail table holding information on the parameter</p></li>
+<li><p>summary table listing all stations, where parameter was measured including number of measurments, average value, first year of observation, last year of observation</p></li>
+<li><p>table listing concentration summary per station for</p></li>
+<li><p>table listing summary of samples collected at the station summarized by year</p></li>
+</ul>
 </div>
 <div class="section" id="plotting">
 <h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h2>
@@ -201,11 +207,18 @@
 <p>These use of these plots is discussed in detail in <cite>Plots</cite> chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:</p>
 <div class="section" id="plot-group-by">
 <h3>Plot group by<a class="headerlink" href="#plot-group-by" title="Permalink to this headline">¶</a></h3>
-<p>The group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <cite>plot group by</cite> is set to <cite>none</cite>, only a single plot will be created.</p>
+<p>The <cite>Plot group by</cite> listbox allows to generate a plot for each distinct occurrence of the plot group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <cite>plot group by</cite> is set to <cite>none</cite>, only a single plot will be created.</p>
 </div>
 <div class="section" id="marker-group-by">
 <h3>Marker group by<a class="headerlink" href="#marker-group-by" title="Permalink to this headline">¶</a></h3>
-<p>the group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <cite>plot group by</cite> is set to <cite>none</cite>, only a single plot will be created.</p>
+<p>The <cite>Marker group by</cite> listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If <cite>marker group by</cite> is set to <cite>none</cite>, only a single marker will be created in the plot.</p>
+</div>
+<div class="section" id="filter">
+<h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h3>
+<p>Data may be filtered prior to generating the plots. Filters are particularly useful for very large datasets. For example, the PGMN water quality dataset comprises over 500 wells. Plotting time series diagrams using the group plot by station option would result in a plot for each station, which will take much time to render in your browser.</p>
+</div>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>

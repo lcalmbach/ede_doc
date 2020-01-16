@@ -1,6 +1,12 @@
 ####
 Menu
 ####
+This chapter describes the use of each menu item, located on the sideboard:
+
+.. image:: _static/menu_menung
+   :scale: 71 %
+   :align: center
+
 ****
 Info
 ****
@@ -30,6 +36,7 @@ Each table may be downloaded by clicking or rightclicking on the link below the 
 Parameters information
 **********************
 In this mode, a selectbox with stations and a selectbox with parameters appear below the menu to you may control for which parameters information should be displayed in the view panel. If on or several stations are selected, the parameter list is filled with parameters that have been analysed for this station. If a parameter is selected, a detail table is displayed with information regarding the parameter. If a parameter is selected the following information is available in the view pane:
+
 * detail table holding information on the parameter
 * summary table listing all stations, where parameter was measured including number of measurments, average value, first year of observation, last year of observation
 * table listing concentration summary per station for 
@@ -50,8 +57,15 @@ These use of these plots is discussed in detail in `Plots` chapter. Other that t
 
 Plot group by
 -------------
-The group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.
+The `Plot group by` listbox allows to generate a plot for each distinct occurrence of the plot group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.
 
 Marker group by
 ---------------
-the group by listbox allows to generate a plot for each distinct occurrence of the group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.
+The `Marker group by` listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If `marker group by` is set to `none`, only a single marker will be created in the plot.
+
+Filter
+------
+Data may be filtered prior to generating the plots. Filters are particularly useful for very large datasets. For example, the PGMN water quality dataset comprises over 500 wells. Plotting time series diagrams using the group plot by station option would result in a plot for each station, which will take much time to render in your browser.
+
+Parameters
+----------
