@@ -35,9 +35,20 @@ In this mode, a selectbox with stations and a selectbox with parameters appear b
 * table listing concentration summary per station for 
 * table listing summary of samples collected at the station summarized by year
 
+********
 Plotting
-========
-The Plotting menu allows you to visualize the data using various charts. 
+********
+The `Plotting` menu allows you to visualize the data using various charts. The following plot types are available:
+* Bar chart
+* Time series
+* Scatter plot
+* Box plot
+* Histogram
+
+These use of these plots is discussed in detail in `Plots` chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:
+
+**Plot group by**
+the group by listbox allows to group the data by a 
 
 Histogram
 *********

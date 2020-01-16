@@ -37,7 +37,7 @@ In this mode, a selectbox with stations and a selectbox with parameters appear b
 
 Plotting
 ========
-The Plotting menu allows you to visualize the data using various charts. 
+The `Plotting` menu allows you to visualize the data using various charts. 
 
 Histogram
 *********
