@@ -30,6 +30,7 @@ Each table may be downloaded by clicking or rightclicking on the link below the 
 Parameters information
 **********************
 In this mode, a selectbox with stations and a selectbox with parameters appear below the menu to you may control for which parameters information should be displayed in the view panel. If on or several stations are selected, the parameter list is filled with parameters that have been analysed for this station. If a parameter is selected, a detail table is displayed with information regarding the parameter. If a parameter is selected the following information is available in the view pane:
+
 * detail table holding information on the parameter
 * summary table listing all stations, where parameter was measured including number of measurments, average value, first year of observation, last year of observation
 * table listing concentration summary per station for 
