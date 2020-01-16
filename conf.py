@@ -24,6 +24,8 @@ author = 'Lukas Calmbach'
 # The full version, including alpha/beta/rc tags
 release = '0.0.2'
 
+#added by lcalmbach@gmail.com, see https://github.com/readthedocs/readthedocs.org/issues/2569
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
