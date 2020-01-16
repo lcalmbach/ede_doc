@@ -5,31 +5,39 @@
   <head>
     <meta charset="utf-8" />
     <title>Main Concepts &#8212; EDE 0.0.2 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Getting Started" href="getting_started.html" />
-    <link rel="prev" title="Home" href="home.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="prev" title="Home" href="home.html" /> 
   </head><body>
-  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="Getting Started"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="home.html" title="Home"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EDE 0.0.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          
-
           <div class="body" role="main">
             
   <div class="section" id="main-concepts">
@@ -55,18 +63,19 @@ Data collections can be selected from the ‘select a data collection’ listbox
 <a class="reference internal image-reference" href="_images/1_3.png"><img alt="_images/1_3.png" class="align-center" src="_images/1_3.png" style="width: 998.9px; height: 554.4px;" /></a>
 <p>The sideboard is further subdivided from top to down into the data selection controls, the menu, and the controls for generating plots. The latter only appears if the menu item ‘plots’ is selected.</p>
 </div>
+</div>
 <div class="section" id="menu">
-<h2>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h2>
+<h1>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="info">
-<h3>Info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h3>
+<h2>Info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
 <p>The information rendered in the view panel holds the following sections:
 * a general description of the dataset
 * metadata from the owner
 * links to web pages related to the data collection
-* Summary information for each dataset (number of stations, parmaeters, measurentments etc.)</p>
+* summary information for each dataset (number of stations, parmaeters, measurentments etc.)</p>
 </div>
 <div class="section" id="station-information">
-<h3>Station information<a class="headerlink" href="#station-information" title="Permalink to this headline">¶</a></h3>
+<h2>Station information<a class="headerlink" href="#station-information" title="Permalink to this headline">¶</a></h2>
 <p>In this mode, a list of stations appears below the menu where you can select stations, for which all available information should be displayed in the view panel. If a station is selected, the following tables and plots are displayed
 * table holds all information on the station (location, name, township etc.)
 * map showing position of station
@@ -76,13 +85,12 @@ Data collections can be selected from the ‘select a data collection’ listbox
 <a class="reference internal image-reference" href="_images/1_5.png"><img alt="_images/1_5.png" class="align-center" src="_images/1_5.png" style="width: 456.0px; height: 227.60000000000002px;" /></a>
 </div>
 <div class="section" id="parameters-information">
-<h3>Parameters information<a class="headerlink" href="#parameters-information" title="Permalink to this headline">¶</a></h3>
+<h2>Parameters information<a class="headerlink" href="#parameters-information" title="Permalink to this headline">¶</a></h2>
 <p>In this mode, a selectbox with stations and a selectbox with parameters appear below the menu to you may control for which parameters information should be displayed in the view panel. If on or several stations are selected, the parameter list is filled with parameters that have been analysed for this station. If a parameter is selected, a detail table is displayed with information regarding the parameter. If a parameter is selected the following information is available in the view pane:
 * detail table holding information on the parameter
 * summary table listing all stations, where parameter was measured including number of measurments, average value, first year of observation, last year of observation
 * table listing concentration summary per station for
 * table listing summary of samples collected at the station summarized by year</p>
-</div>
 <div class="section" id="plotting">
 <h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h3>
 <p>The Plotting menu allows you to visualize the data using various charts.</p>
@@ -94,50 +102,53 @@ Data collections can be selected from the ‘select a data collection’ listbox
 <h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
 <p>Data is displayed as plots or in tables. For larger tables use the scrollbars to view the full table content. you may also use the handle in the upper right to open a new window showing a larger version of the table.</p>
 <a class="reference internal image-reference" href="_images/1_4.png"><img alt="_images/1_4.png" class="align-center" src="_images/1_4.png" style="width: 591.5px; height: 259.7px;" /></a>
-<p>Below each table, you will find a download link, that will download a csv file of the data. You may either just click on the link and download the file under a default name to your download folder. Rightclick the link and select the save as command in the contect menu, to directly place the file under a specified name and in your target folder.</p>
+<p>Below each table, you will find a link, that will download a csv file of the data. You may either just click on the link and download the file under a default name to your download folder. Rightclick the link and select the &lt;save as&gt; command in the context menu, to directly place the file under a specified name in your target folder.</p>
 </div>
 </div>
 </div>
 
 
           </div>
-          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">EDE</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="home.html">Home</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Main Concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#data-collection">Data collection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-sets">Data sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-interface">User interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#menu">Menu</a></li>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Main Concepts</a><ul>
+<li><a class="reference internal" href="#data-collection">Data collection</a></li>
+<li><a class="reference internal" href="#data-sets">Data sets</a></li>
+<li><a class="reference internal" href="#user-interface">User interface</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li><a class="reference internal" href="#menu">Menu</a><ul>
+<li><a class="reference internal" href="#info">Info</a></li>
+<li><a class="reference internal" href="#station-information">Station information</a></li>
+<li><a class="reference internal" href="#parameters-information">Parameters information</a><ul>
+<li><a class="reference internal" href="#plotting">Plotting</a><ul>
+<li><a class="reference internal" href="#histogram">Histogram</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tables">Tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="home.html" title="previous chapter">Home</a></li>
-      <li>Next: <a href="getting_started.html" title="next chapter">Getting Started</a></li>
-  </ul></li>
-</ul>
-</div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="home.html"
+                        title="previous chapter">Home</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="getting_started.html"
+                        title="next chapter">Getting Started</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/main_concepts.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
@@ -148,32 +159,28 @@ Data collections can be selected from the ‘select a data collection’ listbox
     </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2020, Lukas Calmbach.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/main_concepts.rst.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="Getting Started"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="home.html" title="Home"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EDE 0.0.2 documentation</a> &#187;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Lukas Calmbach.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
   </body>
 </html>
