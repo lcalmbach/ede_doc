@@ -1,6 +1,11 @@
 ####
 Menu
 ####
+This chapter describes the use of each menu item, located on the sideboard:
+.. image:: _static/menu_menu.png
+   :scale: 71 %
+   :align: center
+
 ****
 Info
 ****
