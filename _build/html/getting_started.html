@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Getting Started &mdash; Environmental Data Explorer 0.0.2 documentation</title>
+  <title>Get Started Tutorial &mdash; Environmental Data Explorer 0.0.2 documentation</title>
   
 
   
@@ -84,7 +84,12 @@
 <li class="toctree-l1"><a class="reference internal" href="home.html">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="main_concepts.html">Main Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Get Started Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tutorial-1-exploring-a-data-collection">Tutorial 1: Exploring a data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tutorial-2-creating-summary-plots">Tutorial 2: Creating summary plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tutorial-3-creating-plot-markers-and-multiple-plots">Tutorial 3: Creating plot markers and multiple plots</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -130,7 +135,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Getting Started</li>
+      <li>Get Started Tutorial</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -149,9 +154,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>In this chapter you will discover the</p>
+  <div class="section" id="get-started-tutorial">
+<h1>Get Started Tutorial<a class="headerlink" href="#get-started-tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tutorial-1-exploring-a-data-collection">
+<h2>Tutorial 1: Exploring a data collection<a class="headerlink" href="#tutorial-1-exploring-a-data-collection" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial will guide you through the workflow of discovering a data collection using EDE. It is based on the Ontario Provincial Groundwater Monitoring Network (PGMN) data and aims at getting an overview on this data collection. In a second use case describes the steps to take to look specifically at the data for a well of interest.</p>
+<p>When opening EDE, PGMN should already be the first item in the listbox, otherwise select it from the data collection list box.</p>
+<a class="reference internal image-reference" href="_images/tutorial_data_collection.png"><img alt="_images/tutorial_data_collection.png" class="align-center" src="_images/tutorial_data_collection.png" style="width: 225.07px; height: 205.89999999999998px;" /></a>
+<p>By default, the first menu item <a href="#id1"><span class="problematic" id="id2">`</span></a>Info`is selected. On the view panel you will find a overview on the data collection comprising an introductary text and a list of links, related to the data. The info gives a summary on what to expect from the selected data collection, for example: how many parmeters were measured, how many stations were sampled, how many years of data are there. For the Provincial Groundwater Monitoring Network (PGMN) data collection you will find the following: an introductionary text, metadata from the owner (Ontario.ca), a list of links with additional information on the data collection and metadata for two datasets included in this collection: water quality (chemistry) data and water levels.</p>
+<p>Clicking on the stations menu item will show specific information on the stations included in the current dataset. You find again the number of all stations in the title above the first data table. The data table holds all information on the stations as well as on the number of samples taken at each station and on the timeframe the sample were collected. The table may be downloaded using the link below the table. You may also enlarge the table using by clicking in the upper right corner of the table.
+Below the table all samples are shown on a map. Below the map, there is an additional link to a googlemap site, showing the same data in a more interactive way and with a high resolution satellite background. Google map also allows to measure distances and add lines and markers.</p>
+<a class="reference internal image-reference" href="_images/tutorial_1_googlemap.png"><img alt="_images/tutorial_1_googlemap.png" class="align-center" src="_images/tutorial_1_googlemap.png" style="width: 375.5px; height: 439.0px;" /></a>
+<p>As PGMN network has a second dataset with water levels, this second dataset can be explored in the same way. The station names are largely identical with the water quality sampling stations explored in the previous step. Nearly all wells are equipped with a piezometer. Wells with names such as W0000114-2/3/4 have multiple pizometer at different depth intervals.</p>
+<p>Return to the ede page and click on the parameters menu item. A single page with all parameters having at least one observation in the dataset is shown. The minimum, maximum and average value as well as the number of observations and sampling years are shown. It can be noted, that most organic parameters and pesticides have been sampled only once at most stations. whereas Inorganic parameters where sampled yearly in most cases. In order to focus on specific parameter groups and parameters, you may filter the parameter displayed in the viewport using the data filters on the sideboard. For example to gain more insight in the parameter arsenic, enable both the parameter_group and parameter filter in the data filter select box. the select the parameter group ‘inorganic parameters’ and from the parmaeter list in the select box below, which now only contains inorganic parameters, type in arsenic or select the parameter from the list.</p>
+<a class="reference internal image-reference" href="_images/tutorial_1_parameter_filter.png"><img alt="_images/tutorial_1_parameter_filter.png" class="align-center" src="_images/tutorial_1_parameter_filter.png" style="width: 220.81px; height: 244.95px;" /></a>
+<p>The viewport now contains again the parameter summary table, however in a transposed format making it easier to read. Below the summary table, an additional table shows the statistical values for each station. At the bottom of the page a map is rendered. Concentrations are rendered in the following colors:</p>
+<ul class="simple">
+<li><p>&lt; 10 percentile: blue</p></li>
+<li><p>10-90 percentile green</p></li>
+<li><p>&gt; 90 percentile: red</p></li>
+</ul>
+<p>The map allows to detect spatial patterns. A more detailed analysis can be done using the plotting menu item, explained in tutorial 2 and 3.</p>
+</div>
+<div class="section" id="tutorial-2-creating-summary-plots">
+<h2>Tutorial 2: Creating summary plots<a class="headerlink" href="#tutorial-2-creating-summary-plots" title="Permalink to this headline">¶</a></h2>
+<p>This second tutorial will guide you through the procedures to compare groundwater composition provided from overburden wells, completed in sand or gravel aquifers or bedrock wells, completed in a solid rock aquifer for example in a sandstone or fractured carbonates aquifer.</p>
+</div>
+<div class="section" id="tutorial-3-creating-plot-markers-and-multiple-plots">
+<h2>Tutorial 3: Creating plot markers and multiple plots<a class="headerlink" href="#tutorial-3-creating-plot-markers-and-multiple-plots" title="Permalink to this headline">¶</a></h2>
+<p>The third</p>
+</div>
 </div>
 
 

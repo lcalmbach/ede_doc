@@ -89,10 +89,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#user-interface">User interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#plots">Plots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-filters">Data filters</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Get Started Tutorial</a></li>
 </ul>
 
             
@@ -171,12 +172,12 @@ Data collections can be selected from the <cite>select a data collection</cite> 
 * a station table
 * a parameter table
 * a data table</p>
-<p>To explore a dataset, it needs to be selected in the section above the menu. If a data collection includes only a single dataset, for example the <cite>Privincial stream water quality monitoring network</cite> data collection, this dataset is selected by default and no dataset selectbox is shown to the user. If there are more than one dataset, a listbox is displayed below the data collection listbox where you may select the dataset you wish to explore.</p>
+<p>To explore a dataset, it needs to be selected in the section above the menu. If a data collection includes only a single dataset, this dataset is selected by default and no dataset selectbox is shown to the user. If is are more than one dataset, a listbox is displayed below the data collection where you may select the dataset you wish to explore.</p>
 <a class="reference internal image-reference" href="_images/1_2.png"><img alt="_images/1_2.png" class="align-center" src="_images/1_2.png" style="width: 193.79999999999998px; height: 117.6px;" /></a>
 </div>
 <div class="section" id="user-interface">
 <h2>User interface<a class="headerlink" href="#user-interface" title="Permalink to this headline">¶</a></h2>
-<p>The user interface is very simple. It is devide in a sideboard holding all controls and menu items and the view panel to the right.</p>
+<p>The user interface consists of a sideboard to the left, holding all controls and menu items and the view panel that will hold all table and graphics output to the right.</p>
 <a class="reference internal image-reference" href="_images/1_3.png"><img alt="_images/1_3.png" class="align-center" src="_images/1_3.png" style="width: 998.9px; height: 554.4px;" /></a>
 <p>The sideboard is further subdivided from top to down into the data selection controls, the menu, and the controls for generating plots. The latter only appears if the menu item ‘plots’ is selected.</p>
 <p>The view panel is used to display plots and tables requested by the user via the sideboard controls.</p>
@@ -190,6 +191,12 @@ Data collections can be selected from the <cite>select a data collection</cite> 
 <p>Data is displayed as plots or in tables. For larger tables use the scrollbars to view the full table content. You may also use the handle in the upper right to open a new window, resulting in displaying a larger version of the table.</p>
 <a class="reference internal image-reference" href="_images/1_4.png"><img alt="_images/1_4.png" class="align-center" src="_images/1_4.png" style="width: 591.5px; height: 259.7px;" /></a>
 <p>Below each table, you will find a link, that allows downloading a csv file of the data. You may either just click on the link and download the file under a default name to your download folder. Rightclick the link and select the &lt;save as&gt; command in the context menu, to directly place the file under a specified name in your target folder.</p>
+<a class="reference internal image-reference" href="_images/1_6_download_table.png"><img alt="_images/1_6_download_table.png" class="align-center" src="_images/1_6_download_table.png" style="width: 98.0px; height: 27.299999999999997px;" /></a>
+</div>
+<div class="section" id="data-filters">
+<h2>Data filters<a class="headerlink" href="#data-filters" title="Permalink to this headline">¶</a></h2>
+<p>In most cases the information to be shown in tables or plots must be filtered, to show a subset of the available data. First select the parameters, that you wish to filter, for example depth category and station name in the example below. For each selected parameter, an additional select box will appear in the data filter section, where you may the values to be filtered for. In the example below, only wells deeper than 150 m will be used for any of the following operations. The station list in the station select box is also filtered for deep wells making it easier to find a specific deep well. When looking for specific wells, it is therefore often useful to apply several filters in order to obtain a more manageable list.</p>
+<a class="reference internal image-reference" href="_images/1_6_filter.png"><img alt="_images/1_6_filter.png" class="align-center" src="_images/1_6_filter.png" style="width: 219.79999999999998px; height: 212.79999999999998px;" /></a>
 </div>
 </div>
 
