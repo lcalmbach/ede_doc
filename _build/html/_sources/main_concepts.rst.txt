@@ -29,20 +29,20 @@ To explore a dataset, it needs to be selected in the section above the menu. If 
 **************
 User interface
 **************
-The user interface consists of a sideboard to the left, holding all controls and menu items and the view panel that will hold all table and graphics output to the right.
+The user interface consists of a sidebar to the left, holding all controls and menu items and the view panel that will hold all table and graphics output to the right.
 
 .. image:: _static/1_3.png
    :scale: 70 %
    :align: center
 
-The sideboard is further subdivided from top to down into the data selection controls, the menu, and the controls for generating plots. The latter only appears if the menu item 'plots' is selected.
+The sidebar is further subdivided from top to down into the data selection controls, the menu, and the controls for generating plots. The latter only appears if the menu item 'plots' is selected.
 
-The view panel is used to display plots and tables requested by the user via the sideboard controls.
+The view panel is used to display plots and tables requested by the user via the sidebar controls.
 
 *****
 Plots
 *****
-Plots are created using the `Plotting` menu item. The hamburger menu to the upper right of each plot allows to save or edit the plots. In the plot mode, the sideboard contains a show data option, allowing to show the data used for creating the plot. This data can be downloaded and the user may recreated the plot using his preferred charting software.
+Plots are created using the `Plotting` menu item. The hamburger menu to the upper right of each plot allows to save or edit the plots. In the plot mode, the sidebar contains a show data option, allowing to show the data used for creating the plot. This data can be downloaded and the user may recreated the plot using his preferred charting software.
 
 ******
 Tables

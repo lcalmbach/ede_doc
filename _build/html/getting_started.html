@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get Started Tutorial &mdash; Environmental Data Explorer 0.0.2 documentation</title>
+  <title>Get Started Tutorial &mdash; Environmental Data Explorer 0.1.3 documentation</title>
   
 
   
@@ -58,6 +58,10 @@
           
             
             
+              <div class="version">
+                0.1
+              </div>
+            
           
 
           
@@ -86,8 +90,18 @@
 <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Get Started Tutorial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#tutorial-1-exploring-a-data-collection">Tutorial 1: Exploring a data collection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tutorial-2-creating-summary-plots">Tutorial 2: Creating summary plots</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tutorial-3-creating-plot-markers-and-multiple-plots">Tutorial 3: Creating plot markers and multiple plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tutorial-2-creating-summary-plots">Tutorial 2: Creating summary plots</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generating-a-bar-chart-and-customize-plot">Generating a bar chart and customize plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-other-plot-types-and-change-group-by-setting">Using other plot types and change group by setting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tutorial-3-station-data-analysis">Tutorial 3: Station data analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organizing-the-data">Organizing the data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generating-detail-plots-for-a-station">Generating detail plots for a station</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -178,8 +192,13 @@ Below the table all samples are shown on a map. Below the map, there is an addit
 </div>
 <div class="section" id="tutorial-2-creating-summary-plots">
 <h2>Tutorial 2: Creating summary plots<a class="headerlink" href="#tutorial-2-creating-summary-plots" title="Permalink to this headline">¶</a></h2>
-<p>This second tutorial will guide you through the procedures to compare groundwater composition provided from overburden wells, completed in sand or gravel aquifers or bedrock wells, completed in a solid rock aquifer, for example in a sandstone or fractured carbonates aquifer.
-Select the <em>Plotting</em> item from the menu radio buttons. This will generate the default plot type (bar chart) using the first parameter appearing in the parameter list. The bars are grouped by the sampling year and each bar represents the annual average for all measured concentrations.
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>This second tutorial will guide you through the procedures to compare groundwater composition provided from overburden wells, completed in sand or gravel aquifers or bedrock wells, completed in a solid rock aquifer, for example in a sandstone or fractured carbonates aquifer.</p>
+</div>
+<div class="section" id="generating-a-bar-chart-and-customize-plot">
+<h3>Generating a bar chart and customize plot<a class="headerlink" href="#generating-a-bar-chart-and-customize-plot" title="Permalink to this headline">¶</a></h3>
+<p>Select the <em>Plotting</em> item from the menu radio buttons. This will generate the default plot type (bar chart) using the first parameter appearing in the parameter list. The bars are grouped by the sampling year and each bar represents the annual average for all measured concentrations.
 Since the set of parmeters is large (over 300), we need to break down the set in subset. The parameters summary table in tutorial 1 revealed, that organic parameters and pesticides were sampled only once for most wells and inorganic and general parameters are sampled yearly. We will therefor filter the paramters to hold only these two groups:</p>
 <a class="reference internal image-reference" href="_images/tutorial_2_filter_inorganics.png"><img alt="_images/tutorial_2_filter_inorganics.png" class="align-center" src="_images/tutorial_2_filter_inorganics.png" style="width: 225.78px; height: 165.42999999999998px;" /></a>
 <p>Note that the parmeter list for the y parameters within the <em>Plot and axis</em> section in the sidebar is automatically reduced to inorganic parameters and the bar chart in the viewport is regenerated with alkalinity, which is the first element in the newly filled parameter list. Before generating lists of plots, lets customize the current plot, since this is faster for a single plot than for multiple plots. We perform the following changes: reduce the length of the y axis, so more plots are visible on a page and adding a horizontal line showing the values averall average.</p>
@@ -189,9 +208,12 @@ Since the set of parmeters is large (over 300), we need to break down the set in
 </div></blockquote>
 <p>The plot should now look similar to the one below:</p>
 <a class="reference internal image-reference" href="_images/tutorial_2_filter_alk_plot.png"><img alt="_images/tutorial_2_filter_alk_plot.png" class="align-center" src="_images/tutorial_2_filter_alk_plot.png" style="width: 470.02px; height: 149.1px;" /></a>
-<p>The plot shows, that values vary little between about 200 and 290 mg/l CaCO3 with an average of approximately 240 mg/L. The most prominent change is found between the years 2015 and 2016. A series of identical plots can be generated by setting the <em>Group plots by</em> select box to <em>parameter</em>. This will generate a seperate plot for each parameter found in the current dataset, which is currently filtered to hold only inorganic and conventional parameters. The viewport is not filled with a plot for each parameter with available data.</p>
+<p>The plot shows, that values show little variation between 200 and 290 mg/l CaCO3 with an average of approximately 240 mg/L. The most prominent change is found between the years 2015 and 2016. A series of identical plots can be generated by setting the <em>Group plots by</em> select box to <em>parameter</em>. This will generate a seperate plot for each parameter found in the current dataset, which is currently filtered to hold only inorganic and conventional parameters. The viewport is not filled with a plot for each parameter with available data.</p>
 <a class="reference internal image-reference" href="_images/tutorial_2_multi_plot.png"><img alt="_images/tutorial_2_multi_plot.png" class="align-center" src="_images/tutorial_2_multi_plot.png" style="width: 696.5px; height: 432.5px;" /></a>
 <p>Any result that you would like to keep for your report can be copied to the context menu by clicking on the … icon on the upper right of the plot and then select <em>save as SVG/PNG</em>. Note that not all parameters have the same sampling frequency and some parameters exhibit a much higher variability than alkalinity. Typically in long time series we observe a reduction of the elements with low concentrations such as chromium. This reduction is not due to anactually observation of lower concentration but due to the reduction of the method detection limit over time: If elements are not detected, their concentration is not necessarily zero, but below the method detection limit. To be able to plot such a value, it generally represented by 50% of the detection limit. Therefore if a concentration in 2000 and 2010 is 0.1 and 0.01 respectively and the true concentration is 0.0001 in both years, the value would be non detected by the laboratory, reported as &lt;0.1 and &lt;0.01 and plotted as 0.05 and 0.005, suggesting a decrease over time.</p>
+</div>
+<div class="section" id="using-other-plot-types-and-change-group-by-setting">
+<h3>Using other plot types and change group by setting<a class="headerlink" href="#using-other-plot-types-and-change-group-by-setting" title="Permalink to this headline">¶</a></h3>
 <p>So far changes in concentrations over time have been analysed. To gain a summary view of the data, further grouping of plots can be interesting. In a next step we willcompare bedrock and overburden wells. To accomplish this, simply switch the <em>Group markers by year</em> item from year to aquifer type. Note that when plotting multiple plots any click on a control in the sidebar will stop the current process and requild the plots using the new settings. Don’t wait to apply corrections until the current process is completed.</p>
 <a class="reference internal image-reference" href="_images/tutorial_2_aq_type.png"><img alt="_images/tutorial_2_aq_type.png" class="align-center" src="_images/tutorial_2_aq_type.png" style="width: 332.0px; height: 324.0px;" /></a>
 <p>When grouping the aquifer type, you find four possible types (bedrock, overburden, N/A and interface) however you only want to compare pure bedrock and overburden wells. This may be achieved by adding bedrock and overburden to the filters in the <em>Datafilters</em> section: Add the <em>aquifer</em> item to the <em>Filter data by</em> select box, a new selectbox named <em>Filter aquifer types</em>. The newly created plots only include the two aquifer specified. Note that some elements tend to have higher values in bedrock than overburden, e.g. conductivity, cobalt, hardness, while for other parameters the opposite is true (manganese, lead, iron…).</p>
@@ -199,9 +221,30 @@ Since the set of parmeters is large (over 300), we need to break down the set in
 <p>Since every bar represents the average over multiple values, but the number of values is not visible, some of apparent differneces may by based on outlier valus in one of the aquifer types, while the bulk of the data may be indeed similar in both aquifer types. To test this hypothesis, you may select the median instead of the average bar aggregation method. You will find that the values will drastically change to lower values in some cases, for example for iron. Next the distribution of water quality parameters may be visualized using other plottypes, each of which can add further insight in the understanding of the dataset. Select histogram from the <em>Plot type</em> select box, located in the upper part of the sidebar menu. all barcharts will be transformed in histograms showing the distribution of overburden and bedrock wells. If the distribution of the two populations are fairly well seperated, this configuration maybe useful, however if there is much overlapp, the histograms for both aquifer types overlapp and the plot becomes hard to read. To remedy this, select non from the <em>Group markers by</em> select box. This will give a better impression on the overall distribution, however information on the individual distributions of bedrock and overburden wells are lost. You may however achive this again, by generating the plot series twice: one time with only <em>bedrock</em> left in the filter, and a second time with <em>overburden</em> set in the filter. If you start to be interested in a selection of parameters only and dont want all parameters to be generated with every change you apply to the settings, you may also define <em>parameter</em> as a filter from the <em>Filter data by</em> select box and then pick the required parameter from the new select box. For the filter defined as below, histograms will be generated for bedrock data only and plots are created for the elements calcium, magnesium, chloride and sodium.</p>
 <a class="reference internal image-reference" href="_images/tutorial_2_full_filter_plots.png"><img alt="_images/tutorial_2_full_filter_plots.png" class="align-center" src="_images/tutorial_2_full_filter_plots.png" style="width: 311.5px; height: 424.5px;" /></a>
 </div>
-<div class="section" id="tutorial-3-creating-plot-markers-and-multiple-plots">
-<h2>Tutorial 3: Creating plot markers and multiple plots<a class="headerlink" href="#tutorial-3-creating-plot-markers-and-multiple-plots" title="Permalink to this headline">¶</a></h2>
-<p>The third</p>
+</div>
+<div class="section" id="tutorial-3-station-data-analysis">
+<h2>Tutorial 3: Station data analysis<a class="headerlink" href="#tutorial-3-station-data-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Introduction<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>The first two tutorials have shown you, how toget an oversight on a large dataset quickly and efficiently. In this tutorial, we will learn techniques to explore data on a local and site level. For this we will use the second data collection <em>Ontario Provincial (Stream) Water Quality Monitoring Network Data</em>. It consists on water chemistry data from over 1100 river and lake locations. This tutorial will focus on representing data from the <a class="reference external" href="https://en.wikipedia.org/wiki/Grand_River_(Ontario)">Grand River</a> flowing south from its source near Wareham, Ontario, and emptying into the north shore of Lake Erie. for the purpose of this tutorial we are specifically interested in changes occurring from upstream to downstream and in long term water quality changes.</p>
+</div>
+<div class="section" id="organizing-the-data">
+<h3>Organizing the data<a class="headerlink" href="#organizing-the-data" title="Permalink to this headline">¶</a></h3>
+<p>Start by selecting the <em>Plotting</em> menu. In order to work with the data efficiently, we have to use the filters. Filtering for the required stations and parameters not only makes it easier to work with the shorter lists, but also it will accellerate the creation of plots and tables since calculations are based on a smaller dataset. Go to the <em>Data filters</em> section and filter for the following data: invoke the filters for <em>parameter_group</em> and <em>water body</em>. Then select <em>Inorganic parameters</em> and <em>Conventional parameters</em> in the parameter_group filter and <em>Grand river</em> in the water body filter. Note that since the list of rivers is very long, it is most efficient to type in at least the beginning if the river name, the list of stations will adapt to rivers matching the entered characters and finally you can pick the river from this much shorter list.</p>
+<a class="reference internal image-reference" href="_images/tutorial_2_filter1.png"><img alt="_images/tutorial_2_filter1.png" class="align-center" src="_images/tutorial_2_filter1.png" style="width: 228.61999999999998px; height: 252.76px;" /></a>
+</div>
+<div class="section" id="generating-detail-plots-for-a-station">
+<h3>Generating detail plots for a station<a class="headerlink" href="#generating-detail-plots-for-a-station" title="Permalink to this headline">¶</a></h3>
+<p>We change the default setting for the plot type to the map and select the Cond25 (conductivity at 25 °C) parameter. Conductivity is at the same time a good estimator of dissolved inorganic matter and also is measured routinely, therefore all stations are certain to show on the map. The map below should show on your viewport. Use the scroll wheel on your mouse to zoom and center the stations on the plot. Note that conductivity rises gradually on the travel from the source area downstream. In order to gain further insight in the values, select the Show data checkbox. the map is autoamticaly rerendered and you will find a table with all data used below the plot. Each value represents the average of all data available at this station. You will find that the highest average occurs at station S-16018402402.</p>
+<a class="reference internal image-reference" href="_images/tutorial_3_map_cond25.png"><img alt="_images/tutorial_3_map_cond25.png" class="align-center" src="_images/tutorial_3_map_cond25.png" style="width: 355.5px; height: 466.5px;" /></a>
+<p>To further investigate the spatial upstream-downstream trend for other parameters, selectg <em>parameter</em> from the <em>group plots by</em> select box. This generates a separate map plot for every parameter included in the parameter list (currently set to <em>Inorganic parameters</em>.</p>
+<p>Concentration changes over time represent another important aspect in water quality studies. Simply reset the <em>Group plots by</em> select box to <em>none</em> and select the <em>time series</em> plot type. Also make sure, that COND25 is the selected parameter. A plot is generating showing the conductivity changes over time for all station. Since the Grand river has 20 stations, the plot becomes very difficult to read. This data must obviously be plotted with fewer stations per plot. There are two options to achieve this goal:</p>
+<ul class="simple">
+<li><p>You may again group the plots by the station parameter, creating a plot for each station.</p></li>
+<li><p>Define the station in the Data filters section as an additional filter, then start selecting stations. This is usually faster, since only one plot needs to be rendered and you may include multiple stations on the same time series plot.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/tutorial_3_ts_grandriver_2402.png"><img alt="_images/tutorial_3_ts_grandriver_2402.png" class="align-center" src="_images/tutorial_3_ts_grandriver_2402.png" style="width: 431.67999999999995px; height: 289.68px;" /></a>
+</div>
 </div>
 </div>
 

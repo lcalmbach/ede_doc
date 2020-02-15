@@ -1,7 +1,7 @@
 ####
 Menu
 ####
-This chapter describes the use of each menu item, located on the sideboard:
+This chapter describes the use of each menu item, located on the sidebar:
 
 .. image:: _static/menu_menu.png
    :scale: 71 %
@@ -25,17 +25,16 @@ In this mode, a list of stations appears below the menu where you can select sta
 * table listing all samples collected at the station
 * table listing summary of samples collected at the station summarized by year
 
-Each table may be downloaded by clicking or rightclicking on the link below the table. If a google map was created with your stations, you may click the link below the the map to open the station locations in [google maps](https://www.google.com/maps/). In google maps you will find a more detailed background map and in many regions on the globe you have the possilbity to virtually visit the location using streetmap. In order to find your well quickly, paste the station name into the search field. Note that the clipboard is automatically filled with the current station name, so it can be pasted directly into the google map search field.
+Each table may be downloaded by clicking or rightclicking on the link below the table. If a google map was created with your stations, you may click the link below the the map to open the station locations in `Google Maps <https://www.google.com/maps/>`_. In Google Maps you will find a more detailed background map and in many regions on the globe you have the possilbity to virtually visit the location using streetmap. In order to find your well quickly, paste the station name into the search field. Note that the clipboard is automatically filled with the current station name, so it can be pasted directly into the Google Map search field.
 
 .. image:: _static/1_5.png
    :scale: 40 %
    :align: center
 
-
 **********************
 Parameters information
 **********************
-When clicking on the 'parameters' menu item, a list of all parameters used in this dataset is displayed. The list includes metadata on the parameter and summary information on the observed values in the entire dataset in the last columns. You may use the data filter to limit the parameters shown in the parameter table. It can be filtered by parameter group (general, inorganic, organic, pesticides, radioactive) or by selecting individual parameters.  Combining both searches allows to find parameters more quickly. For example, if a list of inorganic parmaeters needs to be generated, one may first filter for parameter_group = inorganic parameters, then pick specific parameters from the parameter list, which by now only contains inorganic parameters.
+When clicking on the *parameters* menu item, a list of all parameters used in this dataset is displayed. The list includes metadata on the parameter and summary information on the observed values in the entire dataset in the last columns. You may use the data filter to limit the parameters shown in the parameter table. It can be filtered by parameter group (general, inorganic, organic, pesticides, radioactive) or by selecting individual parameters.  Combining both searches allows to find parameters more quickly. For example, if a list of inorganic parmaeters needs to be generated, one may first filter for parameter_group = inorganic parameters, then pick specific parameters from the parameter list, which by now only contains inorganic parameters.
 
 .. image:: _static/menu_parameter_filter.png
    :scale: 70 %
