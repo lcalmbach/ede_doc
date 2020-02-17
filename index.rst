@@ -1,25 +1,20 @@
-.. ede_docs documentation master file, created by
-   sphinx-quickstart on Sun Jan 12 06:46:52 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
+===================
 EDE's documentation
 ===================
 
 .. toctree::
-    :maxdepth: 3
-    :caption: Contents:
+   :maxdepth: 3
+   :caption: Contents:
 
-    home
-    main_concepts
-    menu
-    getting_started
+   home
+   main_concepts
+   menu
+   tutorials
 
-
-
-Indices and tables
-==================
+## Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+```
+

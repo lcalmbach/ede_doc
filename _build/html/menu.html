@@ -33,9 +33,10 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/_static/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Get Started Tutorial" href="getting_started.html" />
+    <link rel="next" title="Tutorials" href="tutorials.html" />
     <link rel="prev" title="Main Concepts" href="main_concepts.html" /> 
 </head>
 
@@ -104,7 +105,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Get Started Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 </ul>
 
             
@@ -156,7 +157,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/menu.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/menu.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -172,47 +173,52 @@
   <div class="section" id="menu">
 <h1>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h1>
 <p>This chapter describes the use of each menu item, located on the sidebar:</p>
-<a class="reference internal image-reference" href="_images/menu_menu.png"><img alt="_images/menu_menu.png" class="align-center" src="_images/menu_menu.png" style="width: 155.48999999999998px; height: 115.72999999999999px;" /></a>
-<div class="section" id="info">
+<p align="center">
+<img src="_static/_static/menu_menu.png" id = "img70"/>
+</p><div class="section" id="info">
 <h2>Info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
-<p>The information rendered in the view panel holds the following sections:
-* a general description of the dataset
-* metadata from the owner
-* links to web pages related to the data collection
-* summary information for each dataset (number of stations, parmaeters, measurentments etc.)</p>
+<p>The information rendered in the view panel holds the following sections:</p>
+<ul class="simple">
+<li><p>a general description of the dataset</p></li>
+<li><p>metadata from the owner</p></li>
+<li><p>links to web pages related to the data collection</p></li>
+<li><p>summary information for each dataset (number of stations, parmaeters, measurentments etc.)</p></li>
+</ul>
 </div>
 <div class="section" id="station-information">
 <h2>Station information<a class="headerlink" href="#station-information" title="Permalink to this headline">¶</a></h2>
-<p>In this mode, a list of stations appears below the menu where you can select stations, for which all available information should be displayed in the view panel. If a station is selected, the following tables and plots are displayed
-* table holds all information on the station (location, name, township etc.)
-* map showing position of station
-* table listing all samples collected at the station
-* table listing summary of samples collected at the station summarized by year</p>
-<p>Each table may be downloaded by clicking or rightclicking on the link below the table. If a google map was created with your stations, you may click the link below the the map to open the station locations in <a class="reference external" href="https://www.google.com/maps/">Google Maps</a>. In Google Maps you will find a more detailed background map and in many regions on the globe you have the possilbity to virtually visit the location using streetmap. In order to find your well quickly, paste the station name into the search field. Note that the clipboard is automatically filled with the current station name, so it can be pasted directly into the Google Map search field.</p>
-<a class="reference internal image-reference" href="_images/1_5.png"><img alt="_images/1_5.png" class="align-center" src="_images/1_5.png" style="width: 456.0px; height: 227.60000000000002px;" /></a>
-</div>
+<p>In this mode, a list of stations appears below the menu where you can select stations, for which all available information should be displayed in the view panel. If a station is selected, the following tables and plots are displayed</p>
+<ul class="simple">
+<li><p>table showing information on the station (location, name, township etc.)</p></li>
+<li><p>map showing position of station</p></li>
+<li><p>table listing all samples collected at the station</p></li>
+<li><p>table listing statistics for samples collected at the station summarized by year</p></li>
+</ul>
+<p>Each table may be downloaded by clicking or rightclicking on the link below the table. If a google map was created with your stations, you may click the link below the the map to open the station locations in <a class="reference external" href="https://www.google.com/maps/">Google Maps</a>. In <em>Google Maps</em> you will find a more detailed background map and in many regions on the globe you have the possilbity to virtually visit the location using streetmap. In order to find your well quickly, paste the station name into the search field. Note that the clipboard is automatically filled with the current station name, so it can be pasted directly into the Google Map search field.</p>
+<p align="center">
+<img src="_static/1_5.png" id = "img70"/>
+</p></div>
 <div class="section" id="parameters-information">
 <h2>Parameters information<a class="headerlink" href="#parameters-information" title="Permalink to this headline">¶</a></h2>
-<p>When clicking on the <em>parameters</em> menu item, a list of all parameters used in this dataset is displayed. The list includes metadata on the parameter and summary information on the observed values in the entire dataset in the last columns. You may use the data filter to limit the parameters shown in the parameter table. It can be filtered by parameter group (general, inorganic, organic, pesticides, radioactive) or by selecting individual parameters.  Combining both searches allows to find parameters more quickly. For example, if a list of inorganic parmaeters needs to be generated, one may first filter for parameter_group = inorganic parameters, then pick specific parameters from the parameter list, which by now only contains inorganic parameters.</p>
-<a class="reference internal image-reference" href="_images/menu_parameter_filter.png"><img alt="_images/menu_parameter_filter.png" class="align-center" src="_images/menu_parameter_filter.png" style="width: 221.2px; height: 229.6px;" /></a>
-<p>If a single parameter is selected, additional information is displayed:</p>
+<p>When clicking on the <em>parameters</em> menu item, a list of all parameters used in this dataset is displayed. The list includes metadata on the parameter and summary information on the observed values in the entire dataset in the last columns. You may use the data filter to limit the parameters shown in the parameter table. It can be filtered by parameter group (general, inorganic, organic, pesticides, radioactive) or by selecting individual parameters.  Combining both searches allows to find parameters more quickly. For example, if a list of inorganic parameters should be generated, one may first filter for parameter_group = inorganic parameters, then pick specific parameters from the parameter list, which by now only contains inorganic parameters. Note that even with filtered parameter lists it is often convenient to start typing in the parameter name to be selected. As you type, the list of shown parameters to select from will be reduced to parameters mathing your text making it much easier to select the required item.</p>
+<p align="center">
+<img src="_static/menu_parameter_filter.png" id = "img70"/>
+</p><p>If a single parameter is selected, additional information is displayed:</p>
 <ul class="simple">
 <li><p>A detail table holding information on the parameter. Below the table there is a link named ‘More information (source: NIH-TOXNET)’ which will display additional information on the parameter stored in the U.S. National Library of Medicine.</p></li>
 <li><p>A summary table listing all stations, where the parameter was measured including number of measurements, extreme and average value, first and last year of observation</p></li>
-<li><dl class="simple">
-<dt>A map showing average concentrations per station. Values are shown in three colors:</dt><dd><ul>
+<li><p>A map showing average concentrations per station. Values are shown in three colors:</p>
+<ul>
 <li><p>blue dots represents values from 0 to 10 percentile</p></li>
 <li><p>green dots represent values from &gt;10 to 90 percentile</p></li>
 <li><p>red dots represent values &gt; 90 percentile</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
 </div>
 <div class="section" id="plotting">
 <h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h2>
-<p>The <cite>Plotting</cite> menu allows you to visualize the data using various charts. The following plot types are available:</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Plotting</span></code> menu allows you to visualize the data using various charts. The following plot types are available:</p>
 <ul class="simple">
 <li><p>Bar chart</p></li>
 <li><p>Time series</p></li>
@@ -220,14 +226,14 @@
 <li><p>Box plot</p></li>
 <li><p>Histogram</p></li>
 </ul>
-<p>These use of these plots is discussed in detail in <cite>Plots</cite> chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:</p>
+<p>These use of these plots is discussed in detail in <code class="docutils literal notranslate"><span class="pre">Plots</span></code> chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:</p>
 <div class="section" id="group-plots-by">
 <h3>Group plots by<a class="headerlink" href="#group-plots-by" title="Permalink to this headline">¶</a></h3>
-<p>The <cite>Group plots by</cite> listbox allows to generate a plot for each distinct occurrence of the selected plot group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <cite>plot group by</cite> is set to <cite>none</cite>, only a single plot will be created.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">plots</span> <span class="pre">by</span></code> listbox allows to generate a plot for each distinct occurrence of the selected plot group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <code class="docutils literal notranslate"><span class="pre">plot</span> <span class="pre">group</span> <span class="pre">by</span></code> is set to <code class="docutils literal notranslate"><span class="pre">none</span></code>, only a single plot will be created.</p>
 </div>
 <div class="section" id="marker-group-by">
 <h3>Marker group by<a class="headerlink" href="#marker-group-by" title="Permalink to this headline">¶</a></h3>
-<p>The <cite>Marker group by</cite> listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If <cite>marker group by</cite> is set to <cite>none</cite>, only a single marker will be created in the plot.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Marker</span> <span class="pre">group</span> <span class="pre">by</span></code> listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If <code class="docutils literal notranslate"><span class="pre">marker</span> <span class="pre">group</span> <span class="pre">by</span></code> is set to <code class="docutils literal notranslate"><span class="pre">none</span></code>, only a single marker will be created in the plot.</p>
 </div>
 <div class="section" id="filter">
 <h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h3>
@@ -236,22 +242,25 @@
 <div class="section" id="parameters">
 <h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
 <p>All plots require to select at least one parameter. By default, the first parameter in the parameter list is selected. Parameters may be manually selected, or the parameter name may be typed, as in the example below and selected once the list of parameters is shorter and more manageable.</p>
-<a class="reference internal image-reference" href="_images/menu_plots_parameters.png"><img alt="_images/menu_plots_parameters.png" class="align-center" src="_images/menu_plots_parameters.png" style="width: 221.89999999999998px; height: 178.5px;" /></a>
-</div>
+<p align="center">
+<img src="_static/menu_plots_parameters.png" id = "img70"/>
+</p></div>
 <div class="section" id="axis">
 <h3>Axis<a class="headerlink" href="#axis" title="Permalink to this headline">¶</a></h3>
 <p>By default, the axis minimum and maximum values are selected automatically in order to show all available data. When generating multiple plots using the plot group by function, it is often desireable to use the same axis extension so the plots are easier to compare. This can be achieved by using the x axis and y axis minimum and maximum fields as shown below. The x axis is only available for scatter plots and time series, since for the other plots, the x axis is controlled by the marker group by setting.</p>
-<a class="reference internal image-reference" href="_images/menu_plots_axis_length.png"><img alt="_images/menu_plots_axis_length.png" class="align-center" src="_images/menu_plots_axis_length.png" style="width: 913.4999999999999px; height: 585.1999999999999px;" /></a>
-<p>The ‘Define axis length’ fields allow to define the lengths of axes in pixels (1 px = 0.026458333 cm for a standard pixel density of 96 dpi or 96 px/inch. Depending on the plot type, plot axes may be adapted to allow. The example below shows how shortening the y axis for time series diagrams allows to include more graphs in the viewport.</p>
-<a class="reference internal image-reference" href="_images/menu_plots_axis_length.png"><img alt="_images/menu_plots_axis_length.png" class="align-center" src="_images/menu_plots_axis_length.png" style="width: 913.4999999999999px; height: 585.1999999999999px;" /></a>
-</div>
+<p align="center">
+<img src="_static/menu_plots_axis_length.png" id = "img70"/>
+</p><p>The ‘Define axis length’ fields allow to define the lengths of axes in pixels (1 px = 0.026458333 cm for a standard pixel density of 96 dpi or 96 px/inch. Depending on the plot type, plot axes may be adapted to allow. The example below shows how shortening the y axis for time series diagrams allows to include more graphs in the viewport.</p>
+<p align="center">
+<img src="_static/menu_plots_axis_length.png" id = "img70"/>
+</p></div>
 <div class="section" id="show-data-table">
 <h3>Show data table<a class="headerlink" href="#show-data-table" title="Permalink to this headline">¶</a></h3>
 <p>The show data table option results in including a table with all data shown below every plot. This table can be downloaded using the download link below the table.</p>
 </div>
 <div class="section" id="data-filters">
 <h3>Data filters<a class="headerlink" href="#data-filters" title="Permalink to this headline">¶</a></h3>
-<p>Data filters allow limiting the data used to generate the graphs. The first selectbox is used to define, which data columns should be used for filtering the data, in the following selectboxes, these filters can then be defined.</p>
+<p>Data filters allow limiting the data used to generate the graphs. The first selectbox is used to define, which data columns should be used for filtering the data, in the following selectboxes, these filters can then be applied. Note that station and parameter filters also have an impact on the controls in the sidebar panel. For example when filtering for any station attribute such as <code class="docutils literal notranslate"><span class="pre">location</span></code> or <code class="docutils literal notranslate"><span class="pre">water</span> <span class="pre">body</span></code>, all station select boxes will be filtered to show only stations matching this criteria.</p>
 </div>
 </div>
 </div>
@@ -264,7 +273,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="getting_started.html" class="btn btn-neutral float-right" title="Get Started Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="main_concepts.html" class="btn btn-neutral float-left" title="Main Concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
