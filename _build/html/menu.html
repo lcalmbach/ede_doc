@@ -36,7 +36,6 @@
   <link rel="stylesheet" href="_static/_static/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tutorials" href="tutorials.html" />
     <link rel="prev" title="Main Concepts" href="main_concepts.html" /> 
 </head>
 
@@ -95,8 +94,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#parameters-information">Parameters information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#plotting">Plotting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#group-plots-by">Group plots by</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#marker-group-by">Marker group by</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#filter">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#group-markers-by">Group markers by</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filters">Filters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#axis">Axis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#show-data-table">Show data table</a></li>
@@ -105,7 +104,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 </ul>
 
             
@@ -174,7 +172,7 @@
 <h1>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h1>
 <p>This chapter describes the use of each menu item, located on the sidebar:</p>
 <p align="center">
-<img src="_static/_static/menu_menu.png" id = "img70"/>
+<img src="_static/menu_menu.png" id = "img70"/>
 </p><div class="section" id="info">
 <h2>Info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
 <p>The information rendered in the view panel holds the following sections:</p>
@@ -229,14 +227,14 @@
 <p>These use of these plots is discussed in detail in <code class="docutils literal notranslate"><span class="pre">Plots</span></code> chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:</p>
 <div class="section" id="group-plots-by">
 <h3>Group plots by<a class="headerlink" href="#group-plots-by" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">plots</span> <span class="pre">by</span></code> listbox allows to generate a plot for each distinct occurrence of the selected plot group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <code class="docutils literal notranslate"><span class="pre">plot</span> <span class="pre">group</span> <span class="pre">by</span></code> is set to <code class="docutils literal notranslate"><span class="pre">none</span></code>, only a single plot will be created.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">plots</span> <span class="pre">by</span></code> listbox allows to generate a plot for each distinct occurrence of the selected <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">plots</span> <span class="pre">by</span></code> parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If <code class="docutils literal notranslate"><span class="pre">plot</span> <span class="pre">group</span> <span class="pre">by</span></code> is set to <code class="docutils literal notranslate"><span class="pre">none</span></code>, only a single plot will be created.</p>
 </div>
-<div class="section" id="marker-group-by">
-<h3>Marker group by<a class="headerlink" href="#marker-group-by" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">Marker</span> <span class="pre">group</span> <span class="pre">by</span></code> listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If <code class="docutils literal notranslate"><span class="pre">marker</span> <span class="pre">group</span> <span class="pre">by</span></code> is set to <code class="docutils literal notranslate"><span class="pre">none</span></code>, only a single marker will be created in the plot.</p>
+<div class="section" id="group-markers-by">
+<h3>Group markers by<a class="headerlink" href="#group-markers-by" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">markers</span> <span class="pre">by</span></code> listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">markers</span> <span class="pre">by</span></code> is set to <code class="docutils literal notranslate"><span class="pre">none</span></code>, only a single marker will be created in the plot.</p>
 </div>
-<div class="section" id="filter">
-<h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="filters">
+<h3>Filters<a class="headerlink" href="#filters" title="Permalink to this headline">¶</a></h3>
 <p>Data may be filtered prior to generating the plots. Filters are particularly useful for very large datasets. For example, the PGMN water quality dataset comprises over 500 wells. Plotting time series diagrams using the group plot by station option would result in a plot for each station, which will take a long time to render in your browser.</p>
 </div>
 <div class="section" id="parameters">
@@ -272,8 +270,6 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="main_concepts.html" class="btn btn-neutral float-left" title="Main Concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

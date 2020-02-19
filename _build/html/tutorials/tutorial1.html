@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorial 1 Exploring a data collection &mdash; Environmental Data Explorer 0.1.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tutorial 2: Creating summary plots" href="tutorial2.html" />
+    <link rel="prev" title="Tutorials" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Environmental Data Explorer
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../home.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main_concepts.html">Main Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../menu.html">Menu</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tutorial 1 Exploring a data collection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#information-on-the-data-collection">Information on the data collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#information-on-stations">Information on stations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#information-on-analysed-parameters">Information on analysed parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial2.html">Tutorial 2: Creating summary plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial3.html">Tutorial 3: Station data analysis</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Environmental Data Explorer</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Tutorials</a> &raquo;</li>
+        
+      <li>Tutorial 1 Exploring a data collection</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/tutorial1.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorial-1-exploring-a-data-collection">
+<h1>Tutorial 1 Exploring a data collection<a class="headerlink" href="#tutorial-1-exploring-a-data-collection" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial will guide you through the workflow of discovering a data collection using EDE. It is based on the Ontario Provincial Groundwater Monitoring Network (PGMN) data and aims at getting an overview on this data collection. The second and third tutorials will cover the steps to take to look specifically at the data for a set of wells or a single a well of interest.</p>
+<p>When opening EDE, PGMN should already be the first item in the listbox, otherwise select it from the data collection list box.</p>
+<p align="center">
+<img src="../_static/tutorial_data_collection.png" id = "img70"/>
+</p></div>
+<div class="section" id="information-on-the-data-collection">
+<h2>Information on the data collection<a class="headerlink" href="#information-on-the-data-collection" title="Permalink to this headline">¶</a></h2>
+<p>By default, the first menu item <strong>Info</strong> is selected. On the view panel you will find a overview on the data collection comprising an introductary text and a list of links, related to the data. The info menu provides a summary on what to expect from the selected data collection, for example: how many parmeters were measured, how many stations were sampled, how many years of data are available. For the Provincial Groundwater Monitoring Network (PGMN) data collection you will find the following: an introductionary text, metadata from the owner (Ontario.ca), a list of links with additional information on the data collection and metadata for two datasets included in this collection: water quality (chemistry) data and water levels.</p>
+</div>
+<div class="section" id="information-on-stations">
+<h2>Information on stations<a class="headerlink" href="#information-on-stations" title="Permalink to this headline">¶</a></h2>
+<p>Clicking on the <strong>Stations info</strong> menu item will show specific information on the stations included in the current dataset. You find again the number of all stations in the title above the first data table. The data table holds all information on the stations as well as on the number of samples taken at each station and on the timeframe the sample were collected. The table may be downloaded using the link below the table. You may also enlarge the table using by clicking in the upper right corner of the table.
+Below the table a map plot showing the position of all stations is shown. Below the map, you find an additional link to a googlemap site, showing the same dataas in the map above in a more interactive way and with a high resolution satellite backgroundimage. Google map also allows to measure distances and add lines and markers.</p>
+<p align="center">
+<img src="../_static/tutorial_1_googlemap.png" id = "img70"/>
+</p><p>The PGMN network has a second dataset with water levels, this second dataset can be activated by selecting the <strong>Water levels</strong> menu item from the <strong>Select a dataset</strong> selectbox. It can then be explored in the same way as the water quality. The station names are largely identical with the water quality sampling stations explored in the previous step. Nearly all wells are equipped with a piezometer. Wells with names such as W0000114-2/3/4 have multiple pizometer at different depth intervals.</p>
+</div>
+<div class="section" id="information-on-analysed-parameters">
+<h2>Information on analysed parameters<a class="headerlink" href="#information-on-analysed-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Return to the ede page and click on the parameters menu item. A single page with all parameters having at least one observation in the dataset is shown. The minimum, maximum and average value as well as the number of observations and sampling years are shown. It can be noted, that most organic parameters and pesticides have been sampled only once at most stations whereas most inorganic parameters where sampled yearly. In order to focus on specific parameter groups and parameters during an analysis, you may filter the parameter displayed in the viewport using the data filters on the sideboard. For example to gain more insight in the parameter arsenic, enable both the parameter_group and parameter filter in the data filter select box. Then select the parameter group ‘inorganic parameters’ and from the parmaeter list in the select box below, which now only contains inorganic parameters, type in arsenic or select the parameter from the list. You may skip the step of preselecting the parameter group and select arsenic directly from the full list. However, if your analysis will only require inorganic parameters, all operations will be faster if the parameter list is filtered first.</p>
+<p align="center">
+<img src="../_static/tutorial_1_parameter_filter.png" id = "img70"/>
+</p><p>The viewport now contains again the parameter summary table, however in a transposed format where each row holds a separate value. This makes it easier to read. Below the summary table, an additional table shows the statistical values for each station. At the bottom of the page a map is rendered. Concentrations are rendered in the following colors:</p>
+<ul>
+<li><p>&lt; 10 percentile: blue</p></li>
+<li><p>10-90 percentile green</p></li>
+<li><blockquote>
+<div><p>90 percentile: red</p>
+</div></blockquote>
+</li>
+</ul>
+<p>The map allows to detect spatial patterns. A more detailed analysis can be done using the plotting menu item, explained in tutorial 2 and 3. You should by now have a good understanding on the number, spatial distribution and sampling frequency of of stations and on the availabe parameters.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial2.html" class="btn btn-neutral float-right" title="Tutorial 2: Creating summary plots" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Lukas Calmbach
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

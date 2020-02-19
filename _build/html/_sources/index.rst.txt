@@ -9,12 +9,11 @@ EDE's documentation
    home
    main_concepts
    menu
-   tutorials
+   tutorials/index
 
 ## Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-```
 

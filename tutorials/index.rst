@@ -1,15 +1,14 @@
-===================
-EDE's documentation
-===================
+=========
+Tutorials
+=========
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
 
-   home
-   main_concepts
-   menu
-   tutorials/index
+   tutorial1
+   tutorial2
+   tutorial3
 
 ## Indices and tables
 

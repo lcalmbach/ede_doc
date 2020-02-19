@@ -2,7 +2,7 @@
 This chapter describes the use of each menu item, located on the sidebar:
 
 <p align="center">
-<img src="_static/_static/menu_menu.png" id = "img70"/>
+<img src="_static/menu_menu.png" id = "img70"/>
 </p>
 
 ## Info
@@ -54,12 +54,12 @@ The `Plotting` menu allows you to visualize the data using various charts. The f
 These use of these plots is discussed in detail in `Plots` chapter. Other that the plot type, the plots rendered in the view panel section can be controlled by by the following parameters:
 
 ### Group plots by
-The `Group plots by` listbox allows to generate a plot for each distinct occurrence of the selected plot group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.
+The `Group plots by` listbox allows to generate a plot for each distinct occurrence of the selected `Group plots by` parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be included in the same plot and for each year where there is a least one observation, a plot is created. If `plot group by` is set to `none`, only a single plot will be created.
 
-### Marker group by
-The `Marker group by` listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If `marker group by` is set to `none`, only a single marker will be created in the plot.
+### Group markers by
+The `Group markers by` listbox allows to generate a marker for each distinct occurrence of the marker group by parameter in the data. If the data is grouped by the year, all data points sampled in the same year will be be shown as a distinct marker and the legend will include one item for each year, where there is a least one observation in the data. If `Group markers by` is set to `none`, only a single marker will be created in the plot.
 
-### Filter
+### Filters
 Data may be filtered prior to generating the plots. Filters are particularly useful for very large datasets. For example, the PGMN water quality dataset comprises over 500 wells. Plotting time series diagrams using the group plot by station option would result in a plot for each station, which will take a long time to render in your browser.
 
 ### Parameters
